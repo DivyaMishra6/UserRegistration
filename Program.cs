@@ -10,6 +10,10 @@
             Console.WriteLine("Enter the First Name:");
             string FName = Console.ReadLine();
             Console.WriteLine(obj.ValidateFName(FName));
+
+            Console.WriteLine("Enter the Last Name:");
+            string LName = Console.ReadLine();
+            Console.WriteLine(obj.ValidateFName(LName));
         }
     }
 }
