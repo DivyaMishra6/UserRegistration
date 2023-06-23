@@ -12,6 +12,7 @@ namespace UserRegistration
         public static string FirstName = "^[A-Z]{1}[A-Za-z]{2,}$";
         public static string LastName = "^[A-Z]{1}[A-Za-z]{2,}$";
         public static string Email = "^[a-z0-9._+-]+@[a-z0-9.-]+\\.[a-z.]{2,}$";
+        public static string MobileNum = "^[0-9]{2} [0-9]{10}$";
 
 
         //CHECK FIRST NAME
@@ -30,6 +31,12 @@ namespace UserRegistration
         public bool ValidateEmail(string MailId)
         {
             return Regex.IsMatch(MailId, Email);
+        }
+
+        //CHECK MOBILE NUMBER
+        public bool ValidateMobNum(string MobNum)
+        {
+            return Regex.IsMatch(MobNum, MobileNum);
         }
     }
 }
