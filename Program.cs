@@ -16,12 +16,15 @@
             string MailId = Console.ReadLine();
             Console.WriteLine("Enter your Mobile Number:");
             string MobNum = Console.ReadLine();
+            Console.WriteLine("Enter your password:");
+            string password = Console.ReadLine();
 
 
             Console.WriteLine(obj.ValidateFName(FName));
             Console.WriteLine(obj.ValidateFName(LName));
             Console.WriteLine(obj.ValidateEmail(MailId));
             Console.WriteLine(obj.ValidateMobNum(MobNum));
+            Console.WriteLine(obj.ValidatePassword(password));
         }
     }
 }
